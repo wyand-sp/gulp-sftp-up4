@@ -1,6 +1,6 @@
 {
   "name": "gulp-sftp-up4",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Upload files via SSH and working with gulp 4.0. Fork of original gulp-sftp",
   "license": "MIT",
   "repository": "Robespeler/gulp-sftp-up4",
