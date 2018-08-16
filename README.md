@@ -5,6 +5,7 @@ This solve is by Dan503 https://github.com/gtg092x/gulp-sftp/issues/78#issuecomm
 And what I did - is just public it in npm with name "gulp-sftp-up4"
 
 Original README text below:
+(Just use new name gulp-sftp-up4)
 
 
 > Upload files via SSH
