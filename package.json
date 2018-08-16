@@ -1,13 +1,10 @@
 {
-  "name": "gulp-sftp",
-  "version": "0.1.6",
-  "description": "Upload files via SSH",
+  "name": "gulp-sftp-up4",
+  "version": "0.1.7",
+  "description": "Upload files via SSH and working with gulp 4.0. Fork of original gulp-sftp",
   "license": "MIT",
-  "repository": "gtg092x/gulp-sftp",
-  "homepage": "https://github.com/gtg092x/gulp-sftp/",
-  "bugs": {
-    "url" : "https://github.com/gtg092x/gulp-sftp/issues"
-  },
+  "repository": "Robespeler/gulp-sftp-up4",
+  "homepage": "https://github.com/Robespeler/gulp-sftp-up4",
   "author": {
     "name": "Matthew Drake",
     "email": "mdrake@mediadrake.com",
@@ -18,7 +15,9 @@
     "Carson Britt <carson28@gmail.com> <carson.britt@a0002457.local>",
     "Matthew Drake <mdrake@mediadrake.com>",
     "Valan Brown <github@valanbrown.com>",
-    "Sorin Guga <sorin.guga@gmail.com>"
+    "Sorin Guga <sorin.guga@gmail.com>",
+    "Dan503 https://github.com/Dan503",
+    "Robespeler"
   ],
   "engines": {
     "node": ">=0.10.0"

@@ -281,7 +281,12 @@ module.exports = function (options) {
                 var size = file.stat.size;
 
 
-                file.pipe(stream); // start upload
+                // start upload (edit by Dan503 https://github.com/Dan503)
+                if ( file.isStream() ) {
+                    file.contents.pipe( stream );
+                } else if ( file.isBuffer() ) {
+                    stream.end( file.contents );
+                }
 
                 stream.on('drain',function(){
                     uploadedBytes+=highWaterMark;
