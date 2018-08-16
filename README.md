@@ -1,7 +1,8 @@
 # [gulp](http://gulpjs.com)-sftp [![Build Status](https://travis-ci.org/gtg092x/gulp-sftp.svg?branch=master)](https://travis-ci.org/gtg092x/gulp-sftp)
 
 This is fork of original gulp-sftp with little change which let us to use it with gulp 4.0 version
-This solve is by Dan503 https://github.com/gtg092x/gulp-sftp/issues/78#issuecomment-356475605
+It solve error: "TypeError: file.pipe is not a function".
+This solution is by Dan503 https://github.com/gtg092x/gulp-sftp/issues/78#issuecomment-356475605
 And what I did - is just public it in npm with name "gulp-sftp-up4"
 
 Original README text below:
