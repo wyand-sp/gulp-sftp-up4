@@ -166,7 +166,7 @@ module.exports = function (options) {
             } else {
                 gutil.log('Connection :: closed');
             }
-            
+
         });
 
 
@@ -250,7 +250,7 @@ module.exports = function (options) {
                 }
                 sftp.exists(d, function(exist) {
                     if (!exist) {
-                        sftp.mkdir(d, {mode: '0755'}, function(err){//REMOTE PATH
+                        sftp.mkdir(d, {mode: '0775'}, function(err){//REMOTE PATH
                             if(err){
                                 gutil.log('SFTP Mkdir Error:', gutil.colors.red(err + " " +d));
                             }else{
@@ -262,7 +262,7 @@ module.exports = function (options) {
                         next();
                     }
                 });
-                
+
             },function(){
 
                 var stream = sftp.createWriteStream(finalRemotePath,{//REMOTE PATH
@@ -292,7 +292,9 @@ module.exports = function (options) {
                     uploadedBytes+=highWaterMark;
                     var p = Math.round((uploadedBytes/size)*100);
                     p = Math.min(100,p);
-                    gutil.log('gulp-sftp:',finalRemotePath,"uploaded",(uploadedBytes/1000)+"kb");
+                    if (logFiles) {
+                        gutil.log('gulp-sftp:',finalRemotePath,"uploaded",(uploadedBytes/1000)+"kb");
+					}
                 });
 
 
